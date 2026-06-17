@@ -12,7 +12,7 @@ Full reproduction requires:
 4. Access to a BERT base model, such as `bert-base-uncased`.
 5. Hardware suitable for BERT fine-tuning.
 
-The repository includes a synthetic sample file for code-path inspection only.
+The repository includes a synthetic sample file for schema validation and lightweight smoke runs.
 
 ## Commands
 
@@ -62,12 +62,11 @@ python scripts/evaluate_experts.py --config configs/default.yaml --sample
 python scripts/evaluate_router.py --config configs/default.yaml --sample
 ```
 
-## Known Release Limits
+## Release Scope
 
-- Raw benchmark files are not included in this cleanup because their redistribution status must be confirmed.
+- Raw benchmark files are not included because redistribution depends on the licenses of the underlying benchmarks.
 - Trained router checkpoints are not included.
-- The official paper URL is not yet included.
-- License selection is pending owner confirmation.
+- The official paper URL will be added when the manuscript has a stable public link.
 - Several external baselines named in the paper, such as GraphRouter and RouterEval variants, may require their original repositories or unreleased preprocessing. This repository documents the interfaces and includes code paths for available local variants, but does not claim to vendor every external baseline.
 - The PNG figures in `docs/assets/paper/` are rendered and cropped from the local paper draft. Replace them with final exported paper figures before public release if the journal/conference format requires different assets.
 
