@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "Breaking the Tie: A Cluster-Aware Routing Framework for Large Language Models"
+message: "If you use this repository, please cite the paper."
+type: software
+authors:
+  - family-names: Lu
+    given-names: Yao
+  - family-names: Ji
+    given-names: Zhaiyuan
+  - family-names: Gao
+    given-names: Yaxin
+  - family-names: Wang
+    given-names: Zeyu
+  - family-names: Tang
+    given-names: Zhe
+  - family-names: Wei
+    given-names: Jiaheng
+  - family-names: Zhu
+    given-names: Zhaowei
+  - family-names: Yu
+    given-names: Shanqing
+  - family-names: Xuan
+    given-names: Qi
+date-released: "2026-06-17"
+version: "0.1.0"
+repository-code: "https://github.com/<owner>/<repo>"
+abstract: "Research code for the CASLR method introduced in Breaking the Tie: A Cluster-Aware Routing Framework for Large Language Models."
