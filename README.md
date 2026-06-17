@@ -3,9 +3,11 @@
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
 [![Method](https://img.shields.io/badge/method-CASLR-green)](#method)
 [![Status](https://img.shields.io/badge/status-research--code-orange)](#reproduction)
-[![License](https://img.shields.io/badge/license-TBD-lightgrey)](#license)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
 
 This repository contains the organized research code for **Breaking the Tie: A Cluster-Aware Routing Framework for Large Language Models**. The method introduced in the paper is **CASLR**: Cluster-Aware Soft-Labeling Routing.
+
+**Authors:** Yao Lu, Zhaiyuan Ji, Yaxin Gao, Zeyu Wang, Zhe Tang, Jiaheng Wei, Zhaowei Zhu, Shanqing Yu, and Qi Xuan.
 
 > CASLR is the method name. The project title follows the paper title.
 
@@ -50,7 +52,7 @@ For a detailed derivation, see [docs/method.md](docs/method.md).
 ```text
 .
 +-- README.md
-+-- AGENT.md
++-- LICENSE
 +-- pyproject.toml
 +-- requirements.txt
 +-- configs/
@@ -67,7 +69,7 @@ For a detailed derivation, see [docs/method.md](docs/method.md).
 +-- tests/
 ```
 
-The original experimental scripts were used as local source material during cleanup. Public workflows are organized through `src/caslr/` and `scripts/`.
+The public release surface is organized around `src/caslr/`, `scripts/`, `configs/`, `data/sample/`, and the documentation under `docs/`.
 
 ## Installation
 
@@ -101,7 +103,7 @@ question,dataset,router_Qwen2.5-7B-Instruct,router_Qwen2.5-Math-7B-Instruct
 "Write binary search.",MBPP,0,1
 ```
 
-A synthetic sample is provided at [data/sample/sample_router_data.csv](data/sample/sample_router_data.csv). It is only for checking the code path and documentation examples.
+A synthetic sample is provided at [data/sample/sample_router_data.csv](data/sample/sample_router_data.csv). It is intended for schema validation and lightweight smoke runs.
 
 ## Quick Start
 
@@ -139,7 +141,7 @@ python scripts/measure_latency.py --config configs/five_expert.yaml --query "Sol
 
 Full reproduction requires the benchmark files used by the paper, candidate expert correctness columns, and local/Hugging Face access to the configured BGE and BERT models. See [docs/reproduction.md](docs/reproduction.md).
 
-This cleanup pass does not ship raw benchmark data, trained checkpoints, or a final paper URL because those release decisions depend on data/model licensing and publication status.
+Raw benchmark data and trained checkpoints are not included. Reproduction requires users to provide benchmark files with the schema described above and local or Hugging Face access to the configured embedding and router backbones.
 
 ## Results
 
@@ -220,7 +222,7 @@ More tables are in [docs/results.md](docs/results.md).
 
 ## License
 
-License selection is pending repository-owner confirmation.
+This project is released under the MIT License. See [LICENSE](LICENSE).
 
 ## Acknowledgments
 
