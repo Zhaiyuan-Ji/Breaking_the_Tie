@@ -44,17 +44,18 @@ def test_build_soft_labels_uses_cluster_utility_only_for_successful_experts():
             [1, 0, 1],
             [1, 1, 0],
             [0, 1, 1],
+            [0, 0, 1],
         ],
         dtype=np.int64,
     )
-    clusters = np.array([0, 0, 1])
+    clusters = np.array([0, 0, 1, 1])
 
     labels = build_soft_labels(success, clusters)
 
     assert labels.shape == success.shape
     assert labels[0, 1] == 0.0
     assert labels[1, 2] == 0.0
-    np.testing.assert_allclose(labels.sum(axis=1), np.ones(3))
+    np.testing.assert_allclose(labels.sum(axis=1), np.ones(success.shape[0]))
     assert labels[0, 0] > labels[0, 2]
 
 
@@ -64,10 +65,11 @@ def test_build_hard_labels_selects_best_successful_cluster_expert():
             [1, 0, 1],
             [1, 1, 0],
             [0, 1, 1],
+            [0, 0, 1],
         ],
         dtype=np.int64,
     )
-    clusters = np.array([0, 0, 1])
+    clusters = np.array([0, 0, 1, 1])
 
     labels = build_hard_labels(success, clusters)
 
