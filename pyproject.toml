@@ -11,7 +11,21 @@ requires-python = ">=3.9"
 authors = [
   {name = "Yao Lu"},
   {name = "Zhaiyuan Ji"},
-  {name = "Yaxin Gao"}
+  {name = "Yaxin Gao"},
+  {name = "Zeyu Wang"},
+  {name = "Zhe Tang"},
+  {name = "Jiaheng Wei"},
+  {name = "Zhaowei Zhu"},
+  {name = "Shanqing Yu"},
+  {name = "Qi Xuan"}
+]
+license = "MIT"
+keywords = ["LLM routing", "model routing", "soft labels", "KMeans", "BERT"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
 ]
 dependencies = [
   "numpy>=1.23",
@@ -26,6 +40,9 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0"]
+
+[project.urls]
+Repository = "https://github.com/Zhaiyuan-Ji/Breaking_the_Tie"
 
 [tool.setuptools.packages.find]
 where = ["src"]
