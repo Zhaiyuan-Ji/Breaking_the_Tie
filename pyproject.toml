@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "breaking-the-tie-caslr"
+version = "0.1.0"
+description = "Code for Breaking the Tie: A Cluster-Aware Routing Framework for Large Language Models"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  {name = "Yao Lu"},
+  {name = "Zhaiyuan Ji"},
+  {name = "Yaxin Gao"}
+]
+dependencies = [
+  "numpy>=1.23",
+  "pandas>=1.5",
+  "scikit-learn>=1.2",
+  "pyyaml>=6.0",
+  "openpyxl>=3.1",
+  "torch>=2.0",
+  "transformers>=4.40",
+  "matplotlib>=3.7"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
