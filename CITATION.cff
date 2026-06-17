@@ -23,5 +23,6 @@ authors:
     given-names: Qi
 date-released: "2026-06-17"
 version: "0.1.0"
-repository-code: "https://github.com/<owner>/<repo>"
+repository-code: "https://github.com/Zhaiyuan-Ji/Breaking_the_Tie"
+license: "MIT"
 abstract: "Research code for the CASLR method introduced in Breaking the Tie: A Cluster-Aware Routing Framework for Large Language Models."
