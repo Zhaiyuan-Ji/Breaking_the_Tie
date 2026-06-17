@@ -69,7 +69,7 @@ python scripts/evaluate_router.py --config configs/default.yaml --sample
 - The official paper URL is not yet included.
 - License selection is pending owner confirmation.
 - Several external baselines named in the paper, such as GraphRouter and RouterEval variants, may require their original repositories or unreleased preprocessing. This repository documents the interfaces and includes code paths for available local variants, but does not claim to vendor every external baseline.
-- The SVG figures in `docs/assets/` are recreated schematics based on the paper draft. Replace them with final exported paper figures before public release if the journal/conference format allows redistribution.
+- The PNG figures in `docs/assets/paper/` are rendered and cropped from the local paper draft. Replace them with final exported paper figures before public release if the journal/conference format requires different assets.
 
 ## No Private Paths
 
