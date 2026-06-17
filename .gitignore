@@ -10,6 +10,7 @@ build/
 dist/
 *.egg-info/
 outputs/
+tmp/
 code/
 *.pdf
 *.xlsx
