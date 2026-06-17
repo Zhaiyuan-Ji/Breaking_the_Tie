@@ -1,0 +1,11 @@
+question,dataset,router_Qwen2.5-7B-Instruct,router_Qwen2.5-Coder-7B-Instruct,router_Qwen2.5-Math-7B-Instruct,router_DeepSeek-R1-Distill-Llama-8B,router_DeepSeek-R1-Distill-Qwen-14B
+"Solve 2+2.",Math,1,0,1,1,1
+"Find the derivative of x squared.",Math,1,0,1,0,1
+"Write a Python function to reverse a string.",HumanEval,0,1,0,1,1
+"Fix an off-by-one loop bug.",HumanEval,0,1,0,1,1
+"Choose the best ending for a commonsense story.",HellaSwag,1,0,0,1,1
+"Answer a college-level history question.",MMLU,1,0,0,1,1
+"Solve an olympiad-style algebra problem.",AIME1983-2025,0,0,1,1,1
+"Implement binary search.",MBPP,0,1,0,1,1
+"Evaluate symbolic arithmetic reasoning.",GSM-Symbolic,1,0,1,0,1
+"Explain why the sky appears blue.",MMLU,1,0,0,1,1
