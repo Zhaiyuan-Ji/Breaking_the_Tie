@@ -7,10 +7,6 @@
 
 This repository contains the organized research code for **Breaking the Tie: A Cluster-Aware Routing Framework for Large Language Models**. The method introduced in the paper is **CASLR**: Cluster-Aware Soft-Labeling Routing.
 
-**Authors:** Yao Lu, Zhaiyuan Ji, Yaxin Gao, Zeyu Wang, Zhe Tang, Jiaheng Wei, Zhaowei Zhu, Shanqing Yu, and Qi Xuan.
-
-> CASLR is the method name. The project title follows the paper title.
-
 ## Overview
 
 LLM routing selects one expert model from a candidate pool for each input query. Existing routers often reduce this to ordinary classification, but this creates a failure mode when multiple experts answer the same query correctly. The paper formalizes this as **routing noise** and shows how it can lead to **routing collapse** on unseen tasks.
