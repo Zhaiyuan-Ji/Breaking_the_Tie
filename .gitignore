@@ -12,6 +12,8 @@ dist/
 outputs/
 tmp/
 code/
+AGENT.md
+docs/superpowers/
 *.pdf
 *.xlsx
 *.xls
