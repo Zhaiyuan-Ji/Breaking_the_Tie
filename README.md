@@ -9,10 +9,6 @@ This repository contains the organized research code for **Breaking the Tie: A C
 
 > CASLR is the method name. The project title follows the paper title.
 
-<p align="center">
-  <img src="docs/assets/paper/paper_graphical_abstract.png" width="92%" alt="Graphical abstract of Breaking the Tie">
-</p>
-
 ## Overview
 
 LLM routing selects one expert model from a candidate pool for each input query. Existing routers often reduce this to ordinary classification, but this creates a failure mode when multiple experts answer the same query correctly. The paper formalizes this as **routing noise** and shows how it can lead to **routing collapse** on unseen tasks.
