@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="360" viewBox="0 0 1100 360">
+  <rect width="1100" height="360" fill="#f8fafc"/>
+  <text x="40" y="55" font-family="Arial" font-size="30" font-weight="700" fill="#111827">Breaking the Tie</text>
+  <text x="40" y="90" font-family="Arial" font-size="18" fill="#374151">Cluster-aware soft labels reduce routing noise before BERT router training.</text>
+  <rect x="55" y="150" width="210" height="90" rx="12" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="88" y="202" font-family="Arial" font-size="20" fill="#1e3a8a">User Query</text>
+  <path d="M275 195 L395 195" stroke="#111827" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="405" y="125" width="230" height="140" rx="12" fill="#ecfdf5" stroke="#059669"/>
+  <text x="440" y="176" font-family="Arial" font-size="20" fill="#065f46">Semantic Clusters</text>
+  <text x="442" y="210" font-family="Arial" font-size="16" fill="#047857">macro-domain consensus</text>
+  <path d="M645 195 L765 195" stroke="#111827" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="775" y="125" width="260" height="140" rx="12" fill="#fff7ed" stroke="#ea580c"/>
+  <text x="815" y="176" font-family="Arial" font-size="20" fill="#9a3412">BERT Router</text>
+  <text x="815" y="210" font-family="Arial" font-size="16" fill="#c2410c">dispatch to best LLM expert</text>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#111827"/></marker></defs>
+</svg>
