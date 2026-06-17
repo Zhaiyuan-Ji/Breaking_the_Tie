@@ -1,6 +1,6 @@
-# Legacy Code Inventory
+# Release Scope and Legacy Experiment Mapping
 
-The original local `code/` directory was treated as experimental source material during cleanup. Public workflows are rewritten under `src/caslr/` and `scripts/`; the scratch directory is not part of the public release surface.
+The original local `code/` directory contains historical experiment scripts and dated ablation snapshots. The public release surface is rewritten under `src/caslr/` and `scripts/`; scratch scripts are not part of the supported API.
 
 ## Mapping
 
@@ -18,6 +18,6 @@ The original local `code/` directory was treated as experimental source material
 | `code/Cluster_Visualization.py`, `code/2026_05_22/plot_routing_collapse.py` | Cluster and routing-collapse visualization | `src/caslr/plotting.py`, `docs/assets/` |
 | `code/tempory/*`, dated folders, numbered folders | Scratch or dated experiment snapshots | Not used as public API |
 
-## Cleanup Policy
+## Release Policy
 
 The legacy directory is kept only in the local workspace as an experimental archive. Public users should rely on the normalized modules and scripts instead.
