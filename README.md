@@ -23,13 +23,13 @@ CASLR resolves the tie by moving from single-query success to **cluster-level do
 6. Train a lightweight BERT router with the refined soft labels.
 
 <p align="center">
-  <img src="docs/assets/paper/paper_figure1_routing_noise_collapse.png" width="86%" alt="Figure 1: routing noise and routing collapse">
+  <img src="docs/assets/paper/paper_figure1_routing_noise_collapse.png" width="86%" alt="Routing noise and routing collapse">
 </p>
 
 ## Method
 
 <p align="center">
-  <img src="docs/assets/paper/paper_figure2_caslr_framework.png" width="92%" alt="Figure 2: overview of the CASLR framework">
+  <img src="docs/assets/paper/paper_figure2_caslr_framework.png" width="92%" alt="Overview of the CASLR framework">
 </p>
 
 The code mirrors the paper pipeline:
@@ -148,25 +148,25 @@ The paper reports that the five-expert CASLR configuration reaches **79.79%** av
 ### Main Routing Baselines
 
 <p align="center">
-  <img src="docs/assets/paper/paper_table1_routing_baselines.png" width="92%" alt="Table 1: comparison with routing baselines">
+  <img src="docs/assets/paper/paper_table1_routing_baselines.png" width="92%" alt="Comparison with routing baselines">
 </p>
 
 ### Large-Scale LLM Comparison
 
 <p align="center">
-  <img src="docs/assets/paper/paper_table2_large_llms.png" width="92%" alt="Table 2: comparison with large-scale LLMs">
+  <img src="docs/assets/paper/paper_table2_large_llms.png" width="92%" alt="Comparison with large-scale LLMs">
 </p>
 
 CASLR also visualizes how the router distributes queries to experts across tasks. These distribution figures make the routing behavior inspectable, which is useful when analyzing whether the router is relying on domain specialists rather than a single general model.
 
 <p align="center">
-  <img src="docs/assets/paper/paper_figure4_selection_distribution.png" width="86%" alt="Figure 4: response distribution across tasks">
+  <img src="docs/assets/paper/paper_figure4_selection_distribution.png" width="86%" alt="Response distribution across tasks">
 </p>
 
 ### Expert Pool Size
 
 <p align="center">
-  <img src="docs/assets/paper/paper_table4_expert_pool_size.png" width="92%" alt="Table 4: impact of the number of experts">
+  <img src="docs/assets/paper/paper_table4_expert_pool_size.png" width="92%" alt="Impact of the number of experts">
 </p>
 
 | Expert pool | Math | GSM-Symbolic | AIME1983-2025 | HumanEval | MBPP | MMLU | HellaSwag | Average |
@@ -179,19 +179,19 @@ CASLR also visualizes how the router distributes queries to experts across tasks
 ### Candidate Model Quality
 
 <p align="center">
-  <img src="docs/assets/paper/paper_table3_model_quality.png" width="92%" alt="Table 3: impact of adding high- and low-performance models">
+  <img src="docs/assets/paper/paper_table3_model_quality.png" width="92%" alt="Impact of adding high- and low-performance models">
 </p>
 
 ### Router Latency
 
 <p align="center">
-  <img src="docs/assets/paper/paper_table5_latency.png" width="92%" alt="Table 5: router latency compared with LLM generation">
+  <img src="docs/assets/paper/paper_table5_latency.png" width="92%" alt="Router latency compared with LLM generation">
 </p>
 
 ### Soft-Labeling Ablation
 
 <p align="center">
-  <img src="docs/assets/paper/paper_table6_soft_label_ablation.png" width="92%" alt="Table 6: soft-labeling ablation">
+  <img src="docs/assets/paper/paper_table6_soft_label_ablation.png" width="92%" alt="Soft-labeling ablation">
 </p>
 
 | Labeling strategy | Math | GSM-Symbolic | AIME1983-2025 | HumanEval | MBPP | MMLU | HellaSwag | Average |
@@ -202,19 +202,19 @@ CASLR also visualizes how the router distributes queries to experts across tasks
 ### Additional Routing Distributions
 
 <p align="center">
-  <img src="docs/assets/paper/paper_figureA5_five_expert_distribution.png" width="86%" alt="Figure A.5: five-expert response distribution">
+  <img src="docs/assets/paper/paper_figureA5_five_expert_distribution.png" width="86%" alt="Five-expert response distribution">
 </p>
 
 <p align="center">
-  <img src="docs/assets/paper/paper_figureA6_distribution.png" width="86%" alt="Figure A.6: response distribution">
+  <img src="docs/assets/paper/paper_figureA6_distribution.png" width="86%" alt="Response distribution">
 </p>
 
 <p align="center">
-  <img src="docs/assets/paper/paper_figureA7_distribution.png" width="86%" alt="Figure A.7: response distribution">
+  <img src="docs/assets/paper/paper_figureA7_distribution.png" width="86%" alt="Response distribution">
 </p>
 
 <p align="center">
-  <img src="docs/assets/paper/paper_figureA8_distribution.png" width="86%" alt="Figure A.8: response distribution">
+  <img src="docs/assets/paper/paper_figureA8_distribution.png" width="86%" alt="Response distribution">
 </p>
 
 More tables are in [docs/results.md](docs/results.md).
