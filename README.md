@@ -169,13 +169,6 @@ CASLR also visualizes how the router distributes queries to experts across tasks
   <img src="docs/assets/paper/paper_table4_expert_pool_size.png" width="92%" alt="Impact of the number of experts">
 </p>
 
-| Expert pool | Math | GSM-Symbolic | AIME1983-2025 | HumanEval | MBPP | MMLU | HellaSwag | Average |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 3 experts (1-3) | 77.00 | 92.10 | 26.02 | 69.70 | 61.00 | 73.76 | 65.85 | 66.49 |
-| 5 experts (1-5) | 81.44 | 93.20 | 66.33 | 93.94 | 69.00 | 82.52 | 72.10 | 79.79 |
-| 9 experts (1-9) | 86.80 | 96.50 | 81.63 | 87.88 | 73.00 | 89.15 | 80.05 | 85.00 |
-| 10 experts (1-10) | 84.20 | 95.50 | 80.10 | 84.85 | 72.00 | 87.89 | 79.25 | 83.40 |
-
 ### Candidate Model Quality
 
 <p align="center">
@@ -193,11 +186,6 @@ CASLR also visualizes how the router distributes queries to experts across tasks
 <p align="center">
   <img src="docs/assets/paper/paper_table6_soft_label_ablation.png" width="92%" alt="Soft-labeling ablation">
 </p>
-
-| Labeling strategy | Math | GSM-Symbolic | AIME1983-2025 | HumanEval | MBPP | MMLU | HellaSwag | Average |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Hard label | 78.32 | 92.10 | 54.08 | 87.88 | 46.00 | 70.62 | 70.10 | 71.30 |
-| CASLR soft label | 81.44 | 93.20 | 66.33 | 93.94 | 69.00 | 82.52 | 72.10 | 79.79 |
 
 ### Additional Routing Distributions
 
